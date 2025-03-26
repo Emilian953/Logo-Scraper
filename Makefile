@@ -9,6 +9,8 @@ install:
 	@echo "📌 NOTE: This will create a Python virtual environment in ./venv"
 	@echo "         and install all required packages inside it."
 	@echo ""
+	@sudo apt update && sudo apt install -y libcairo2 libcairo2-dev
+	@echo ""
 	@python3 -m venv venv
 	@venv/bin/pip install --upgrade pip
 	@venv/bin/pip install -r requirements.txt
@@ -24,7 +26,7 @@ install:
 
 # Run Logo Similarity script
 run:
-	@python group_logos.py
+	@python3 group_logos.py
 
 # Cleanup output files
 clean:
