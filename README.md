@@ -151,3 +151,7 @@ Logo-Scraper uses a prioritized strategy to extract logos from websites:
   ]
 }
 ```
+
+## 🏃 Running Example (command: make run)
+
+![Image](https://github.com/user-attachments/assets/95bc617b-c529-42af-b42f-27b02aa13737)
